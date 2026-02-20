@@ -500,6 +500,24 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     
 <meta name="generator" content="WP Rocket 3.17.3.1" data-wpr-features="wpr_delay_js wpr_defer_js wpr_minify_js wpr_lazyload_images wpr_lazyload_iframes wpr_oci wpr_image_dimensions wpr_minify_css wpr_desktop wpr_preload_links" /></head>
 
+<style>
+/* Quitar máscara de Elementor que vuelve invisible la imagen */
+.elementor-element-5ea3f3bf .elementor-widget-container img{
+  -webkit-mask-image: none !important;
+  mask-image: none !important;
+
+  /* reemplazo simple para círculo */
+  border-radius: 50% !important;
+  display: block;
+}
+
+/* Por si el contenedor necesita recorte */
+.elementor-element-5ea3f3bf .elementor-widget-container{
+  overflow: hidden;
+  border-radius: 50%;
+}
+</style>
+
 <body class="home wp-singular page-template page-template-elementor_header_footer page page-id-19 wp-embed-responsive wp-theme-generatepress wp-child-theme-generatepress_child no-sidebar nav-below-header one-container header-aligned-left dropdown-hover elementor-default elementor-template-full-width elementor-kit-493 elementor-page elementor-page-19 full-width-content" itemtype="https://schema.org/WebPage" itemscope>
 	
 <!-- GTM Container placement set to automatic -->
@@ -588,11 +606,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 			<div class="elementor-widget-wrap elementor-element-populated">
 						<div class="elementor-element elementor-element-5ea3f3bf elementor-widget elementor-widget-image" data-id="5ea3f3bf" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
 				<div class="elementor-widget-container">
-														<img width="362" height="362"
+														<im.g width="362" height="362"
      decoding="async"
      src="/images/MaViCo_IMGBANNER-r2f4tztl83sjd0trvuplwnny38yae6vffviqsjm36s.jpg"
      alt="Hechizo de Amarre"
-     loading="lazy" />													</div>
+     loading="lazy" />endo													</div>
 				</div>
 					</div>
 		</div>
