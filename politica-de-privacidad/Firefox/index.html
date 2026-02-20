@@ -340,64 +340,6 @@ body{background-color:var(--base-2);color:var(--contrast);}a{color:var(--accent)
 <script src="https://maestravienaco.magiablancaparaenamorar.com/wp-content/plugins/google-analytics-for-wordpress/assets/js/frontend-gtag.min.js?ver=10.0.2" id="monsterinsights-frontend-script-js" async data-wp-strategy="async"></script>
 <script data-cfasync="false" data-wpfc-render="false" id='monsterinsights-frontend-script-js-extra'>var monsterinsights_frontend = {"js_events_tracking":"true","download_extensions":"doc,pdf,ppt,zip,xls,docx,pptx,xlsx","inbound_paths":"[{\"path\":\"\\\/go\\\/\",\"label\":\"affiliate\"},{\"path\":\"\\\/recommend\\\/\",\"label\":\"affiliate\"}]","home_url":"https:\/\/maestravienaco.magiablancaparaenamorar.com","hash_tracking":"false","v4_id":"G-F0GMJBFHGW"};</script>
 <script src="https://maestravienaco.magiablancaparaenamorar.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
-		<script type="text/javascript">
-			//<![CDATA[
-			var show_msg = '';
-			if (show_msg !== '0') {
-				var options = {view_src: "View Source is disabled!", inspect_elem: "Inspect Element is disabled!", right_click: "Right click is disabled!", copy_cut_paste_content: "Cut/Copy/Paste is disabled!", image_drop: "Image Drag-n-Drop is disabled!" }
-			} else {
-				var options = '';
-			}
-
-         	function nocontextmenu(e) { return false; }
-         	document.oncontextmenu = nocontextmenu;
-         	document.ondragstart = function() { return false;}
-
-			document.onmousedown = function (event) {
-				event = (event || window.event);
-				if (event.keyCode === 123) {
-					if (show_msg !== '0') {show_toast('inspect_elem');}
-					return false;
-				}
-			}
-			document.onkeydown = function (event) {
-				event = (event || window.event);
-				//alert(event.keyCode);   return false;
-				if (event.keyCode === 123 ||
-						event.ctrlKey && event.shiftKey && event.keyCode === 73 ||
-						event.ctrlKey && event.shiftKey && event.keyCode === 75) {
-					if (show_msg !== '0') {show_toast('inspect_elem');}
-					return false;
-				}
-				if (event.ctrlKey && event.keyCode === 85) {
-					if (show_msg !== '0') {show_toast('view_src');}
-					return false;
-				}
-			}
-			function addMultiEventListener(element, eventNames, listener) {
-				var events = eventNames.split(' ');
-				for (var i = 0, iLen = events.length; i < iLen; i++) {
-					element.addEventListener(events[i], function (e) {
-						e.preventDefault();
-						if (show_msg !== '0') {
-							show_toast(listener);
-						}
-					});
-				}
-			}
-			addMultiEventListener(document, 'contextmenu', 'right_click');
-			addMultiEventListener(document, 'cut copy paste print', 'copy_cut_paste_content');
-			addMultiEventListener(document, 'drag drop', 'image_drop');
-			function show_toast(text) {
-				var x = document.getElementById("amm_drcfw_toast_msg");
-				x.innerHTML = eval('options.' + text);
-				x.className = "show";
-				setTimeout(function () {
-					x.className = x.className.replace("show", "")
-				}, 3000);
-			}
-		//]]>
-		</script>
 		<style type="text/css">body * :not(input):not(textarea){user-select:none !important; -webkit-touch-callout: none !important;  -webkit-user-select: none !important; -moz-user-select:none !important; -khtml-user-select:none !important; -ms-user-select: none !important;}#amm_drcfw_toast_msg{visibility:hidden;min-width:250px;margin-left:-125px;background-color:#333;color:#fff;text-align:center;border-radius:2px;padding:16px;position:fixed;z-index:999;left:50%;bottom:30px;font-size:17px}#amm_drcfw_toast_msg.show{visibility:visible;-webkit-animation:fadein .5s,fadeout .5s 2.5s;animation:fadein .5s,fadeout .5s 2.5s}@-webkit-keyframes fadein{from{bottom:0;opacity:0}to{bottom:30px;opacity:1}}@keyframes fadein{from{bottom:0;opacity:0}to{bottom:30px;opacity:1}}@-webkit-keyframes fadeout{from{bottom:30px;opacity:1}to{bottom:0;opacity:0}}@keyframes fadeout{from{bottom:30px;opacity:1}to{bottom:0;opacity:0}}</style>
 		
 <!-- Google Tag Manager for WordPress by gtm4wp.com -->
