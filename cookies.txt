@@ -1,0 +1,4 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+maestravienaco.magiablancaparaenamorar.com	TRUE	/	FALSE	1999999999	PHPSESSID	1f47b932793e637f901e82637681b512
+
